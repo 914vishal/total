@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+</head>
+<center><body>
+    <form action="./home.html">
+        <marquee direction="right" behavior="alternate" height="60px" width="500px"><h1 style="color:rgb(8, 36, 249)">LOGIN PAGE</h1></marquee>
+        <br>
+        <br>
+        <label for="some"><b>Email</b></label><br><br>
+        <input type="text" pattern="[a-z\d]+@(gmail|outlook|yahoo)+\.(com|in|at|org|gov)" placeholder="exe@gmail.com" autocomplete="off">
+        <br>
+        <br>
+        <label for="pass"><b>Password</b></label><br><br>
+        <input type="password" id="password" name="password" 
+               pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+               title="Must contain at least one number, one uppercase and lowercase letter, and at least 8 or more characters"
+               placeholder="Enter password"
+               autocomplete="off"
+               required>
+        <br>
+        <br>
+        <a href="./forgetpassword.html" target="_blank"> Forget Password..?</a>
+        <br><br>
+        <input type="submit" value="Log in">
+        <br><br>
+        <a href="./signup.html"><button type="button">New Register</button></a><br><br>
+        <br><br>
+    </form>
+</body></center>
+</html>

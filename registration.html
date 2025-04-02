@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+</head>
+<body>
+    <h1><center>Student Registration form</center></h1>
+    <form action="./home.html">
+        <fieldset>
+            <legend><b>Personal Details</b></legend>
+            <label for="">Full Name</label>
+            <input type="text" autofocus required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label for="">Email</label>
+            <input type="email" pattern="[a-zA-Z\d]+@(gmail|outlook|yahoo)+\.(com|in|gov|at|org)" required> <br>
+            <br>
+            <label for="">Phone No</label>
+            <input type="text" required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label for="">Date of Birth</label>
+            <input type="date"> <br>
+            <br>
+            <label for="">Gender</label>&nbsp;&nbsp;&nbsp;
+            <input type="radio" name="gender">
+            <label for="">Male</label>
+            <input type="radio" name="gender">
+            <label for="">Female</label>
+        </fieldset>
+        <fieldset>
+            <legend><b>Course selection</b></legend>
+            <label for="">select course</label>
+            <select>
+                <option value="---Select---" disabled selected>---Select---</option>
+                <option value="Dis">CSE</option>
+                <option value="Dis">ECE</option>
+                <option value="Dis">MECH</option>
+                <option value="Dis">AIML</option>
+                <option value="Dis">AIDS</option>
+                <option value="Dis">CSG</option>
+                <option value="Dis">IT</option>
+            </select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label for="">Batch</label>
+            <select>
+                <option value="---Select---" disabled selected>---Select---</option>
+                <option value="Dis">Regular</option>
+                <option value="Dis">Open Degree</option>
+                <option value="Dis">Supplementary</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend><b>Agreement & Submission</b></legend>
+            <label for="">Payment</label>
+            <select>
+                <option value="---Select---" disabled selected>---Select---</option>
+                <option value="Dis">Online</option>
+                <option value="Dis">Offline</option>
+            </select>
+        </fieldset>
+        <center><input type="submit" value="Register" style="background-color: orange; color: white; font-size: 18px; padding: 10px 20px; border: none;"></center>
+    </form>
+</body>
+</html>
